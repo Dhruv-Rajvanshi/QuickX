@@ -19,7 +19,7 @@ services:
       networks:
         - quickx
       healthcheck:
-        test: ["CMD","curl","-f","mongodb+srv://pubgpro7848:tQnky6Q2IbN0I1qT@cluster0.c9a54g3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"]
+        test: ["CMD-SHELL", "curl -f $${MONGO_URI} || exit 1"]
         interval: 30s
         timeout: 10s
         retries: 5
