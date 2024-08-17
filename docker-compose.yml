@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+    
+    front-end:
+      container_name: Angular
+      build:
+        context: .
+      ports:
+        - "5000:5000"
+      networks:
+        - quickx
+      
+    back-end:
+      container_name: MongoDB
+      build:
+        context: .
+      environment:
+        MONGO_URI: "mongodb+srv://pubgpro7848:tQnky6Q2IbN0I1qT@cluster0.c9a54g3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+      networks:
+        - quickx
+      healthcheck:
+        test: ["CMD","curl","-f","mongodb+srv://pubgpro7848:tQnky6Q2IbN0I1qT@cluster0.c9a54g3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"]
+        interval: 30s
+        timeout: 10s
+        retries: 5
+
+networks:
+  quickx:
+    name: quickx
