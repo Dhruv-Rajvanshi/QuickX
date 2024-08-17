@@ -1,17 +1,18 @@
+const env = require('dotenv').config();
 const express = require('express');
 const { MongoClient } = require('mongodb');
 const bcrypt = require('bcryptjs');
 const path = require('path');
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 // MongoDB URI
-const uri = "mongodb+srv://pubgpro7848:tQnky6Q2IbN0I1qT@cluster0.c9a54g3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = process.env.MONGO_URI;
 const client = new MongoClient(uri, { });
 
 async function run() {
