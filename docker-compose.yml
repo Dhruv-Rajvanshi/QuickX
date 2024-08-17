@@ -15,7 +15,7 @@ services:
       build:
         context: .
       environment:
-        MONGO_URI: "mongodb+srv://pubgpro7848:tQnky6Q2IbN0I1qT@cluster0.c9a54g3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+        MONGO_URI: ${MONGO_URI}
       networks:
         - quickx
       healthcheck:
