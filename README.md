@@ -71,7 +71,7 @@ npm start
 2. Run the Docker container:
 
    ```bash
-   docker run -p 5000:5000 quickx-app
+   docker run -d -p 5000:5000 --name QuickX -e MONGO_URI="URI" quickx:latest
    ```
 
 ## 📂 Project Structure
