@@ -65,7 +65,7 @@ npm start
 1. Build the Docker image:
 
    ```bash
-   docker build -t quickx-app .
+   docker build -t quickx:latest .
    ```
 
 2. Run the Docker container:
