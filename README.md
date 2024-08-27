@@ -7,14 +7,14 @@
 ## Features 🌟
 
 - **AI-Powered Answers**: Quickly receive precise answers across a wide range of topics.
-- **Frontend Powered by AngularJS**: Enjoy a modern and responsive user interface that enhances user experience.
+- **Frontend Powered by HTML/CSS**: Enjoy a modern and responsive user interface that enhances user experience.
 - **Backend Using Node.js**: Leverage robust server-side logic for handling requests efficiently.
 - **MongoDB Integration**: A scalable NoSQL database solution for managing data effectively.
 - **Dockerized Deployment**: Easily deploy QuickX in any environment using Docker.
 
 ## Technologies Used 🛠️
 
-- **AngularJS**: For building dynamic and responsive user interfaces.
+- **HTML/CSS**: For building dynamic and responsive user interfaces.
 - **Node.js**: For managing the backend with efficient server-side logic.
 - **MongoDB**: As the database to store and manage application data.
 - **Docker**: For containerizing the application to ensure consistent deployment across environments.
